@@ -35,6 +35,10 @@ app.use((err, req, res, _next) => {
 });
 
 // ── Start ───────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`✅ Backend corriendo en http://localhost:${PORT}`);
-});
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`✅ Backend corriendo en http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
