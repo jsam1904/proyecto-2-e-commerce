@@ -2,6 +2,10 @@
 
 Sistema web para gestionar inventario y ventas de una tienda. Stack: **React + Node.js (Express) + PostgreSQL + Docker**.
 
+## Demo en línea
+
+https://proyecto-2-e-commerce-l52q.vercel.app/login
+
 ---
 
 ## Levantar el proyecto
